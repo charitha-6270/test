@@ -1,0 +1,73 @@
+furnish_future/
+│
+├── app.py                      # Main Flask app
+│
+├── data/                       # TEMP storage (acts like DB)
+│   ├── users.py                # Users data
+│   ├── products.py             # Furniture data
+│   ├── carts.py                # Cart data
+│   └── orders.py               # Orders data
+│
+├── routes/
+│   ├── auth_routes.py          # Register & Login
+│   ├── product_routes.py       # View furniture
+│   ├── cart_routes.py          # Cart operations
+│   ├── order_routes.py         # Place order
+│   └── admin_routes.py         # Admin CRUD
+│
+├── templates/
+│   ├── auth/
+│   │   ├── login.html authguard.py 
+│   │   └── register.html
+│   │
+│   ├── products/
+│   │   ├── sofas.html
+│   │   ├── beds.html
+│   │   ├── tables.html
+│   │   ├── chairs.html
+│   │  
+│   │
+│   ├── cart/
+│   │   └── cart.html
+│   │
+│   ├── admin/
+│   │   ├── dashboard.html
+│   │   ├── add_product.html
+│   │   └── edit_product.html
+│   │
+│   └── orders/
+│       └── confirmation.html
+            history.html
+
+    base.html
+    home.html
+    landing.html
+    login.html
+    payment.html
+    register.html
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── images/
+│   │   ├── sofas/
+│   │   ├── beds/
+│   │   ├── tables/
+│   │   └── chairs/
+│   └── js/
+│       └── cart.js
+            script.js
+│
+├── services/
+│   ├──  authguard.py 
+│   ├──  dynamodb_service.py       
+│   ├──  mysql_service.py
+│   └── sns_service.py 
+                
+│
+├── utils/
+│   ├── auth.py         # Login required
+│   
+│
+├── requirements.txt
+└── README.md

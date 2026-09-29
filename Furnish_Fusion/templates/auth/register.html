@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="form-box">
+<h2>User Registration</h2>
+
+<form method="POST" class="form-box">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    
+    <input type="text" name="phone_no" placeholder="phone_no" required>
+
+    
+    <textarea name="address" placeholder="address" required></textarea>
+
+
+    <div class="button-container">
+    <button class="btn">Register</button>
+    </div>
+
+</form>
+
+<p>Already have an account? <a href="/login">Login</a></p>
+</div>
+
+{% endblock %}
+
